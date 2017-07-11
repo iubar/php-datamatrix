@@ -38,30 +38,10 @@ class CedolinoService {
 
 			if (substr($sha1, 0, 15) === $hash){
 				$valid = true;
-			//	$titolare = TitolareService::getByCf($cf_titolare);
 			}
 		}
 
 		$data['valid'] = $valid;
-
-// 		if ($titolare !== null){
-// 			$data['titolare'] = [
-// 				'denominazione' => $titolare->getDenom(),
-// 				'email' => $titolare->getEmail(),
-// 				'indirizzo' => $titolare->getIndirizzo(),
-// 				'telefono' => $titolare->getTel()
-// 			];
-
-// 			$comune = $titolare->getIdcomune();
-// 			if ($comune !== null){
-// 				$data['titolare']['comune'] = $comune->getDenominazione();
-// 				$prov = $comune->getIdprovincia();
-// 				if ($prov !== null){
-// 					$data['titolare']['provincia'] = $prov->getDenominazione();
-// 					$data['titolare']['provincia_sigla'] = $prov->getSigla();
-// 				}
-// 			}
-// 		}
 
         return $data;
     }
