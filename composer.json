@@ -1,0 +1,20 @@
+{
+	"name" : "php-datamatrix",
+ 	"version": "0.1",
+	"repositories": [
+		{
+			"type": "git",
+			"url": "https://github.com/iubar/iubar-php-common.git"
+		} 	        
+	],	    
+	"require" : {
+		"php" : ">=5.4.0",
+		"iubar/iubar-php-common": "dev-master@dev",
+		"slim/slim" : "2.*"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Iubar\\" : "src/Iubar/"
+		}
+	}
+}
