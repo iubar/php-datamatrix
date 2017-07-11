@@ -10,7 +10,6 @@ class CedolinoService {
     	$data = [];
         // http://php.net/manual/en/function.openssl-public-decrypt.php
         $valid = false;
-        $titolare = null;
 
 		if (self::isArrayValid($json_array)){
 			$api = $json_array['api']; // Versione dell'api
