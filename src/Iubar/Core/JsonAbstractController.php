@@ -76,12 +76,7 @@ abstract class JsonAbstractController extends AbstractController {
 	}
 
 	protected function handleException($e){
-	    $this->app->log->error($e->getMessage());
-	    if($this->app->config('debug2')){
- 	        throw $e; // Whoops will output the error
-	    }else{
-	    	$this->responseStatus(ResponseCode::INTERNAL_SERVER_ERROR, array(), $e->getMessage()); // Senza questo statement, Slim restituirebbe un messaggio di errore in formato html
-	    }
+		$this->responseStatus(ResponseCode::INTERNAL_SERVER_ERROR, array(), $e->getMessage()); // Senza questo statement, Slim restituirebbe un messaggio di errore in formato html
 	}
 
 
