@@ -6,5 +6,5 @@ con il fine di garantire al cedolino le caratteristiche di integrtià e autentic
 
 # Nota
 
-L'app ufficiale per la validazione della busta paga rimane [IubarHR](https://www.pagheopen.it](https://play.google.com/store/apps/details?id=it.iubar.hr).
+L'app ufficiale per la validazione della busta paga rimane [IubarHR](https://play.google.com/store/apps/details?id=it.iubar.hr).
 
